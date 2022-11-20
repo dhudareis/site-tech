@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MatriculaController;
+use App\Http\Controllers\CursoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,20 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/matricula', function () {
-    return view('matricula');
-});
+Route::get('/matricula', [MatriculaController::class, 'index']);
+Route::get('/matricula/create', [MatriculaController::class, 'create']);
 
-Route::get('/curso/{id}', function ($id = null) {
-    return view('curso',['id'=>$id]);
-});
-
-Route::get('/buscacursos', function () {
-
-    $busca = request('search');
-
-    return view('bus_cursos',['busca'=>$busca]);
-});
+Route::get('/curso', [CursoController::class, 'index']);
 
 /*Auth::routes();*/
 

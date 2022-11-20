@@ -17,9 +17,33 @@
 
     </head>
     <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbar"> 
+                    <a href="/" class="navbar-brand">
+                        <img scr="/img/icon.svg" alt="TECH.com">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Bem Vindo!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/curso" class="nav-link">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/matricula/create" class="nav-link">Matricule-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Acesse</a>
+                        </li>  
+                    </ul>
+                </div>
+            </nav>
+        </header>
         @yield('content')
     <footer>
         <p>TECH.com &copy; 2022</p>
     </footer>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

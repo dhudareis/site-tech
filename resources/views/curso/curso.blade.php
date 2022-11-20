@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
-@section('title','TECH.com')
+@section('title','Cursos')
 
 @section('content')
-<h1>TECH.com</h1>
-
+<h1>Cursos</h1>
+ 
 @endsection
