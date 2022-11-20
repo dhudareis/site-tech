@@ -17,6 +17,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Route::get('/matricula', function () {
+    return view('matricula');
+});
+
+Route::get('/curso/{id}', function ($id = null) {
+    return view('curso',['id'=>$id]);
+});
+
+Route::get('/buscacursos', function () {
+
+    $busca = request('search');
+
+    return view('bus_cursos',['busca'=>$busca]);
+});
+
+/*Auth::routes();*/
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
