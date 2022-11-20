@@ -21,7 +21,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbar"> 
                     <a href="/" class="navbar-brand">
-                        <img scr="/img/icon.svg" alt="TECH.com">
+                        <img scr="/img/temapng.png" alt="TECH.com">
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">

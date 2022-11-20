@@ -3,6 +3,6 @@
 @section('title','Cursos')
 
 @section('content')
-<h1>Cursos</h1>
- 
+<h1>Página de Cursos</h1>
+
 @endsection
